@@ -142,7 +142,7 @@ export const SchoolImage = styled.img`
 export const Title = styled.h1`
   font-size: 36px;
   font-weight: bold;
-  color: white;
+  color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
   @media screen and (max-width: 768px) {

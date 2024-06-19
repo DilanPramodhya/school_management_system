@@ -9,7 +9,7 @@ export const SidebarContainer = styled.div`
   width: ${({ isOpen }) => (isOpen ? '250px' : '80px')};
   width: 250px;
   height: 100%;
-  background-color: #2c3e50; /* Dark blue background */
+  background-color: #055C7B; /* Dark blue background */
   color: white;
   overflow-y: auto; /* Enable vertical scrolling */
   padding-top: 60px;
@@ -54,6 +54,7 @@ export const SidebarIcon = styled.div`
 export const Logo = styled.img`
   width: 50px;
   height: auto;
+  cursor: pointer;
 `;
 
 export const ToggleButton = styled.div`
