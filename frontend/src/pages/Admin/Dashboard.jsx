@@ -16,14 +16,11 @@ import EventCalender from "./EventCalender";
 import Performance from "./Performance";
 import Announcement from "./Announcement";
 import Sidebar from "./Sidebar";
-import { SidebarContainer } from "../../styles/ExamStyles";
 
 function AdminDashboard() {
   return (
     <AdminDashboardContainer>
-      <SidebarContainer>
-        <Sidebar />
-      </SidebarContainer>
+      <Sidebar />
       <Content>
         <TopContent>
           <Section>

@@ -10,3 +10,4 @@ npm i axios lorem-ipsum react-icons react-router-dom react-toastify tailwind sty
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 npm i @mui/material @emotion/styled @emotion/react
+npm i react-chartjs-2

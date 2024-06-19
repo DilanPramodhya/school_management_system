@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {
-  StudentDashboardContainer,
-  BottomContent,
   Card,
   CardContainer,
   CardContent,
@@ -10,11 +8,8 @@ import {
   Content,
   Section,
   SectionTitle,
-  TopContent,
+  StudentDashboardContainer,
 } from "../../styles/DashboardStyles";
-import EventCalender from "./EventCalender";
-import Performance from "./Performance";
-import Announcement from "./Announcement";
 import Sidebar from "./Sidebar";
 
 function StudentDashboard() {

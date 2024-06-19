@@ -13,6 +13,7 @@ import {
   BsPeople,
   BsPerson,
 } from "react-icons/bs";
+import { TiThMenu } from "react-icons/ti";
 import {
   Logo,
   SidebarContainer,

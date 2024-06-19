@@ -32,7 +32,7 @@ function Sidebar() {
     setIsOpen(!isOpen);
   };
   return (
-    <SidebarContainer style={{ width: isOpen ? "230px" : "75px" }}>
+    <SidebarContainer style={{ width: isOpen ? "250px" : "58px" }}>
       <SidebarHeader>
         <Logo src={logo} alt="logo" />
       </SidebarHeader>
@@ -45,27 +45,15 @@ function Sidebar() {
         </SidebarNavItem>
         <SidebarNavItem>
           <SidebarIcon>
-            <BsPeople />
+            <BsFileText />
           </SidebarIcon>
-          <StyledLink to="/student/classes">Classes</StyledLink>
-        </SidebarNavItem>
-        <SidebarNavItem>
-          <SidebarIcon>
-            <BsPeople />
-          </SidebarIcon>
-          <StyledLink to="/student/students">Students</StyledLink>
-        </SidebarNavItem>
-        <SidebarNavItem>
-          <SidebarIcon>
-            <BsPerson />
-          </SidebarIcon>
-          <StyledLink to="/student/teachers">Teachers</StyledLink>
+          <StyledLink to="/student/assignments">Assignments</StyledLink>
         </SidebarNavItem>
         <SidebarNavItem>
           <SidebarIcon>
             <BsFileText />
           </SidebarIcon>
-          <StyledLink to="/student/assignments">Assignments</StyledLink>
+          <StyledLink to="/student/attendance">Attendance</StyledLink>
         </SidebarNavItem>
         <SidebarNavItem>
           <SidebarIcon>
@@ -83,7 +71,7 @@ function Sidebar() {
           <SidebarIcon>
             <BsCalendar />
           </SidebarIcon>
-          <StyledLink to="/student/attendance">Attendance</StyledLink>
+          <StyledLink to="/student/announcements">Announcements</StyledLink>
         </SidebarNavItem>
         <SidebarNavItem>
           <SidebarIcon>
@@ -93,21 +81,9 @@ function Sidebar() {
         </SidebarNavItem>
         <SidebarNavItem>
           <SidebarIcon>
-            <BsChatDots />
-          </SidebarIcon>
-          <StyledLink to="/student/communication">Announcement</StyledLink>
-        </SidebarNavItem>
-        <SidebarNavItem>
-          <SidebarIcon>
-            <BsCalendarEvent />
-          </SidebarIcon>
-          <StyledLink to="/student/events">Events and Calender</StyledLink>
-        </SidebarNavItem>
-        <SidebarNavItem>
-          <SidebarIcon>
             <BsGear />
           </SidebarIcon>
-          <StyledLink to="/student/settings">Settings and Profile</StyledLink>
+          <StyledLink to="/student/settings">Profile</StyledLink>
         </SidebarNavItem>
         <ToggleButton onClick={toggleSidebar}>
           <ToggleIcon isOpen={isOpen}>☰</ToggleIcon>
