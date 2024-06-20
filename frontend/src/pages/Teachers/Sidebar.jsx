@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import {
   BsBook,
@@ -43,49 +43,67 @@ function Sidebar() {
           <SidebarIcon>
             <BsGraphUp />
           </SidebarIcon>
-          <StyledLink to="/student/dashboard">Dashboard</StyledLink>
+          <StyledLink to="/teacher/dashboard">Dashboard</StyledLink>
         </SidebarNavItem>
         <SidebarNavItem>
           <SidebarIcon>
             <BsFileText />
           </SidebarIcon>
-          <StyledLink to="/student/assignments">Assignments</StyledLink>
-        </SidebarNavItem>
-        <SidebarNavItem>
-          <SidebarIcon>
-            <BsFileText />
-          </SidebarIcon>
-          <StyledLink to="/student/attendance">Attendance</StyledLink>
-        </SidebarNavItem>
-        <SidebarNavItem>
-          <SidebarIcon>
-            <BsBook />
-          </SidebarIcon>
-          <StyledLink to="/student/exams">Exams</StyledLink>
-        </SidebarNavItem>
-        <SidebarNavItem>
-          <SidebarIcon>
-            <BsGraphDown />
-          </SidebarIcon>
-          <StyledLink to="/student/performance">Performance</StyledLink>
+          <StyledLink to="/teacher/assignments">Assignments</StyledLink>
         </SidebarNavItem>
         <SidebarNavItem>
           <SidebarIcon>
             <BsCalendar />
           </SidebarIcon>
-          <StyledLink to="/student/communication">Announcements</StyledLink>
+          <StyledLink to="/teacher/attendance">Attendance</StyledLink>
+        </SidebarNavItem>
+        <SidebarNavItem>
+          <SidebarIcon>
+            <BsPeople />
+          </SidebarIcon>
+          <StyledLink to="/teacher/classes">Classes</StyledLink>
+        </SidebarNavItem>
+        <SidebarNavItem>
+          <SidebarIcon>
+            <BsCalendarEvent />
+          </SidebarIcon>
+          <StyledLink to="/teacher/events">Events</StyledLink>
         </SidebarNavItem>
         <SidebarNavItem>
           <SidebarIcon>
             <BsBook />
           </SidebarIcon>
-          <StyledLink to="/student/library">Library</StyledLink>
+          <StyledLink to="/teacher/exams">Exams</StyledLink>
+        </SidebarNavItem>
+        <SidebarNavItem>
+          <SidebarIcon>
+            <BsGraphDown />
+          </SidebarIcon>
+          <StyledLink to="/teacher/performance">Performance</StyledLink>
+        </SidebarNavItem>
+        <SidebarNavItem>
+          <SidebarIcon>
+            <BsCalendar />
+          </SidebarIcon>
+          <StyledLink to="/teacher/communication">Announcements</StyledLink>
+        </SidebarNavItem>
+        <SidebarNavItem>
+          <SidebarIcon>
+            <BsPeople />
+          </SidebarIcon>
+          <StyledLink to="/teacher/students">Students</StyledLink>
+        </SidebarNavItem>
+        <SidebarNavItem>
+          <SidebarIcon>
+            <BsPerson />
+          </SidebarIcon>
+          <StyledLink to="/teacher/teachers">Teachers</StyledLink>
         </SidebarNavItem>
         <SidebarNavItem>
           <SidebarIcon>
             <BsGear />
           </SidebarIcon>
-          <StyledLink to="/student/settings">Profile</StyledLink>
+          <StyledLink to="/teacher/settings">Profile</StyledLink>
         </SidebarNavItem>
         <ToggleButton onClick={toggleSidebar}>
           <ToggleIcon isOpen={isOpen}>☰</ToggleIcon>

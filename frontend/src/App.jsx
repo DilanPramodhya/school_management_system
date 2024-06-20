@@ -27,6 +27,18 @@ import AnnouncementSection from "./pages/Students/Announcement";
 import ProfileSection from "./pages/Students/Profile";
 import AttendanceSection from "./pages/Students/Attendance";
 
+import TeacherDashboard from "./pages/Teachers/Dashboard";
+import CheckAnnouncementSection from "./pages/Teachers/Announcement";
+import AssignmentSection from "./pages/Teachers/Assignment";
+import CheckAttendanceSection from "./pages/Teachers/Attendance";
+import ClassSection from "./pages/Teachers/Classes";
+import EventSection from "./pages/Teachers/Events";
+import CheckExamSection from "./pages/Teachers/Exams";
+import CheckPerformancesSection from "./pages/Teachers/Performance";
+import TeacherProfilesSection from "./pages/Teachers/Profile";
+import StudentSection from "./pages/Teachers/Student";
+import TeacherSection from "./pages/Teachers/Teacher";
+
 function App() {
   return (
     <Router>
@@ -42,6 +54,7 @@ function App() {
         {/* All Dashboard route  */}
         <Route exact path="/admin/dashboard" element={<AdminDashboard />} />
         <Route exact path="/student/dashboard" element={<StudentDashboard />} />
+        <Route exact path="/teacher/dashboard" element={<TeacherDashboard />} />
 
         {/* Admin section */}
         <Route exact path="/admin/assignments" element={<Assignment />} />
@@ -60,7 +73,7 @@ function App() {
         {/* Student section */}
         <Route
           exact
-          path="/student/announcements"
+          path="/student/communication"
           element={<AnnouncementSection />}
         />
         <Route
@@ -82,6 +95,39 @@ function App() {
         />
         <Route exact path="/student/settings" element={<ProfileSection />} />
         <Route exact path="/student/sidebar" element={<Sidebar />} />
+
+        {/* Teacher section */}
+        <Route
+          exact
+          path="/teacher/communication"
+          element={<CheckAnnouncementSection />}
+        />
+        <Route
+          exact
+          path="/teacher/assignments"
+          element={<AssignmentSection />}
+        />
+        <Route
+          exact
+          path="/teacher/attendance"
+          element={<CheckAttendanceSection />}
+        />
+        <Route exact path="/teacher/exams" element={<CheckExamSection />} />
+        <Route exact path="/teacher/classes" element={<ClassSection />} />
+        <Route exact path="/teacher/events" element={<EventSection />} />
+        <Route
+          exact
+          path="/teacher/performance"
+          element={<CheckPerformancesSection />}
+        />
+        <Route
+          exact
+          path="/teacher/settings"
+          element={<TeacherProfilesSection />}
+        />
+        <Route exact path="/teacher/students" element={<StudentSection />} />
+        <Route exact path="/teacher/teachers" element={<TeacherSection />} />
+        <Route exact path="/teacher/sidebar" element={<Sidebar />} />
       </Routes>
     </Router>
   );

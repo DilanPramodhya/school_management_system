@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Sidebar from "./Sidebar";
+import {} from "../../styles/DashboardStyles";
 import {
   AnnouncementContainer,
   Content,
@@ -12,8 +12,9 @@ import {
   TextArea,
   AnnouncementList,
 } from "../../styles/AnnouncementStyles";
+import Sidebar from "./Sidebar";
 
-function Announcement() {
+function CheckAnnouncementSection() {
   return (
     <AnnouncementContainer>
         <Sidebar />
@@ -35,4 +36,4 @@ function Announcement() {
   );
 }
 
-export default Announcement;
+export default CheckAnnouncementSection;

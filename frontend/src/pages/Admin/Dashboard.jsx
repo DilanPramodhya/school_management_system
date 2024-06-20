@@ -47,8 +47,8 @@ function AdminDashboard() {
         </TopContent>
 
         <BottomContent>
-          <Performance />
-          <Announcement />
+          {/* <Performance />
+          <Announcement /> */}
         </BottomContent>
       </Content>
     </AdminDashboardContainer>

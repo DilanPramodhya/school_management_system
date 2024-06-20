@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {} from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import {
   BsBook,
@@ -29,13 +29,16 @@ import {
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(true);
 
+
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
   return (
     <SidebarContainer style={{ width: isOpen ? "230px" : "75px" }}>
       <SidebarHeader>
-        <Logo src={logo} alt="logo" />
+        <Link to="/">
+          <Logo src={logo} alt="logo" />
+        </Link>
       </SidebarHeader>
       <SidebarNav>
         <SidebarNavItem>
