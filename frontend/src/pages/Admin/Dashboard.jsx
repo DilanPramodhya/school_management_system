@@ -46,10 +46,6 @@ function AdminDashboard() {
           </Section>
         </TopContent>
 
-        <BottomContent>
-          {/* <Performance />
-          <Announcement /> */}
-        </BottomContent>
       </Content>
     </AdminDashboardContainer>
   );
