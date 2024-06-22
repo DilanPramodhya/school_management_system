@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 import validator from "validator";
 
-const eventsSchema = new mongoose.Schema({
-  events: {
+const classSchema = new mongoose.Schema({
+  grade: {
     type: String,
     required: true,
   },
 });
 
-export const Events = mongoose.model("Events", eventsSchema);
+export const Class = mongoose.model("Class", classSchema);
